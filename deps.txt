@@ -31,8 +31,6 @@ glib2:official
 mesa:official
 pipewire:official
 pipewire-pulse:official
-pipewire-alsa:official
-pipewire-jack:official
 wireplumber:official
 pavucontrol:official
 brightnessctl:official
