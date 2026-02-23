@@ -1,0 +1,6 @@
+module Quickshell.Config
+singleton Theme 1.0 Theme.qml
+IslandWindow 1.0 windows/IslandWindow.qml
+CircularWidget 1.0 widgets/CircularWidget.qml
+KeybindsWindow 1.0 windows/KeybindsWindow.qml
+MprisIsland 1.0 MprisIsland.qml
