@@ -110,7 +110,7 @@ install() {
 			SRC="$SOURCE_DIR/$folder"
 			DEST="$DOTFILES_DIR/$folder"
 
-			if [ -e "$CONFIG_PATH" ] || [ -L "$CONFIG_PATH" ]; then
+			if [ -e "$CONFIG_PATH/$folder" ] || [ -L "$CONFIG_PATH/$folder" ]; then
 				echo "Backing up existing ~/.config/$folder..."
 				mv "$CONFIG_PATH" "$BACKUP_DIR/"
 			fi
@@ -138,9 +138,9 @@ uninstall() {
 	for folder in "${CONFIGS[@]}"; do
 		REPO_PATH="$DOTFILES_DIR/$folder"
 
-		if [ -L "$CONFIG_PATH" ]; then
-			echo "Removing symlink $CONFIG_PATH"
-			rm "$CONFIG_PATH"	
+		if [ -L "$CONFIG_PATH/$folder" ]; then
+			echo "Removing symlink $CONFIG_PATH/$folder"
+			rm "$CONFIG_PATH/$folder"	
 		fi
 
 		if [ -d "$REPO_PATH" ]; then
