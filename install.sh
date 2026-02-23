@@ -68,7 +68,8 @@ print_banner() {
 	echo -e "\033[1;36mVersion: $DISPLAY_VERSION\033[0m\n"
 }
 
-
+SOURCE_DIR="$(dirname "$(realpath "$0")")"
+CONFIG_PATH="$HOME/.config/$folder"
 install() {
     echo "Starting installation..."
 	if is_arch; then
@@ -103,7 +104,6 @@ install() {
 		mkdir -p "$BACKUP_DIR"
 		printf "\n\033[1;33mIMPORTANT:\033[0m Existing configs are backed up in %s\n\n" "$BACKUP_DIR"
 
-		SOURCE_DIR="$(dirname "$(realpath "$0")")"
 		mkdir -p "$DOTFILES_DIR"
 
 		for folder in "${CONFIGS[@]}"; do
@@ -136,7 +136,6 @@ install() {
 uninstall() {
     echo "Starting removal..."
 	for folder in "${CONFIGS[@]}"; do
-		CONFIG_PATH="$HOME/.config/$folder"
 		REPO_PATH="$DOTFILES_DIR/$folder"
 
 		if [ -L "$CONFIG_PATH" ]; then
