@@ -1,2 +1,2 @@
-# Pala's Dots
+# Pala's Dots (VERY UNFINISHED)
 my dotfiles based on my own "dynamic island" made with Quickshell
