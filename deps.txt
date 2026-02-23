@@ -1,0 +1,42 @@
+# Format: package_name:source
+# ----------------------------
+# AUR Packages
+swaync-git:aur
+rofi-power-menu:aur
+qt6ct-kde:aur
+ttf-jetbrains-mono-nerd:aur
+
+# Official repo Packages
+cliphist:official
+fastfetch:official
+hyprpolkitagent:official
+hyprland:official
+hypridle:official
+hyprshot:official
+hyprpaper:official
+quickshell:official
+rofi:official
+foot:official
+fish:official
+playerctl:official
+wl-clipboard:official
+
+# Core utilities & XDG / system helpers
+xdg-utils:official
+xdg-desktop-portal:official
+xdg-desktop-portal-wlr:official
+dbus:official
+dconf:official
+glib2:official
+mesa:official
+pipewire:official
+pipewire-pulse:official
+pipewire-alsa:official
+pipewire-jack:official
+wireplumber:official
+pavucontrol:official
+brightnessctl:official
+pamixer:official
+git:official
+base-devel:official
+htop:official
