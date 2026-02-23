@@ -69,7 +69,7 @@ print_banner() {
 }
 
 SOURCE_DIR="$(dirname "$(realpath "$0")")"
-CONFIG_PATH="$HOME/.config/$folder"
+CONFIG_PATH="$HOME/.config"
 install() {
     echo "Starting installation..."
 	if is_arch; then
